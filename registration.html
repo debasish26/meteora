@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration Form</title>
+
+<style>
+    .container {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+        margin: 5px;
+        cursor: pointer;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    
+<div class="container">
+    <h2 style="
+    text-align: center;">Event Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+        
+        <h3>Onstage Events</h3>
+        <input type="checkbox" id="mysticMarch" name="onstageEvent[]" value="Mystic March Ice Breaker">
+        <label for="mysticMarch">Mystic March Ice Breaker</label><br>
+        <input type="checkbox" id="whirlsTwirls" name="onstageEvent[]" value="Whirls & Twirls (Dance Competition)">
+        <label for="whirlsTwirls">Whirls & Twirls (Dance Competition)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Funk It Up (Battle Of The Bands)">
+        <label for="funkItUp">Funk It Up (Battle Of The Bands)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Fantasy Carnival Realms (Fashion Show)">
+        <label for="funkItUp">Fantasy Carnival Realms (Fashion Show)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Live Up To The Beat (Lip Sync Battle)">
+        <label for="funkItUp">Live Up To The Beat (Lip Sync Battle)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Rhythm Rumble (DJ Battle)">
+        <label for="funkItUp">Rhythm Rumble (DJ Battle)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Random Revelations (Stress Round)">
+        <label for="funkItUp">Random Revelations (Stress Round)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Curtain Quest: Drama's Best (Drama Competition)">
+        <label for="funkItUp">Curtain Quest: Drama's Best (Drama Competition)</label><br>
+        <input type="checkbox" id="funkItUp" name="onstageEvent[]" value="Mr. & Miss. Meteora">
+        <label for="funkItUp">Mr. & Miss. Meteora</label><br>
+
+
+
+
+        <h3>Offstage Events</h3>
+        <input type="checkbox" id="flagTastic" name="offstageEvent[]" value="Flag-Tastic Splash (Flag Painting)">
+        <label for="flagTastic">Flag-Tastic Splash (Flag Painting)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Ridicule, Revel & Rumble (Illogical Debate)">
+        <label for="ridiculeRevel">Ridicule, Revel & Rumble (Illogical Debate)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Hunt It Down (Treasure Hunt)">
+        <label for="ridiculeRevel">Hunt It Down (Treasure Hunt)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Masked In Mystery (Mask Painting)">
+        <label for="ridiculeRevel">Masked In Mystery (Mask Painting)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="The Walk Of Art (Show Painting)">
+        <label for="ridiculeRevel">The Walk Of Art (Show Painting)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Graffiti Jam (Graffiti Competition)">
+        <label for="ridiculeRevel">Graffiti Jam (Graffiti Competition)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Carnival Sketch-A-Palooza (Comic Sketching)">
+        <label for="ridiculeRevel">Carnival Sketch-A-Palooza (Comic Sketching)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="It's A Surprise, Duh (Surprise)">
+        <label for="ridiculeRevel">It's A Surprise, Duh (Surprise)</label><br>
+        <input type="checkbox" id="ridiculeRevel" name="offstageEvent[]" value="Funfair Fizz (Mocktail Making)">
+        <label for="ridiculeRevel">Funfair Fizz (Mocktail Making)</label><br>
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Registration Successful!");
+    // Here you can add code to submit the form data to a server via AJAX or perform other actions
+});
+</script>
+
+</body>
+</html>

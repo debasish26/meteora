@@ -1,0 +1,111 @@
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .header {
+        font-size: 2rem;
+    }
+
+    .nav ul li a {
+        padding: 0 40px;
+    }
+
+    .main {
+        margin: 10% 5%;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .header {
+        font-size: 1.6rem;
+    }
+
+    .nav ul li a {
+        padding: 0 20px;
+    }
+
+    .main {
+        margin: 20% 5%;
+    }
+
+    .main h2 {
+        font-size: 1.2rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Your existing CSS styles */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .header {
+        font-size: 2rem;
+    }
+
+    .nav ul li a {
+        padding: 0 40px;
+    }
+
+    .main {
+        margin: 10% 5%;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .mainBox {
+        flex-direction: column;
+    }
+
+    .mainBox > div {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .header {
+        font-size: 1.6rem;
+    }
+
+    .nav ul li a {
+        padding: 0 20px;
+    }
+
+    .main {
+        margin: 20% 5%;
+    }
+
+    .main h2 {
+        font-size: 1.2rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.8rem;
+    }
+
+    .mainBox {
+        margin: 0;
+    }
+
+    .mainBox > div {
+        padding: 10px;
+    }
+}
